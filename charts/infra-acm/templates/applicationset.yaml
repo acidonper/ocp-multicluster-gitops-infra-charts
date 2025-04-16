@@ -25,15 +25,15 @@ spec:
         apps.open-cluster-management.io/pull-to-ocm-managed-cluster: "true"
     spec:
       project: default
-      sources:
-        - repoURL: "{{ $.Values.repoURL }}"
-          targetRevision: 0.1.1
-          helm:
-            valueFiles:
-              - "values-global.yaml"
-              - "{{ . }}/values-env.yaml"
-              - "{{ . }}/{{`{{name}}`}}/values-cluster.yaml"
-          chart: infra-chart
+      source:
+        path: .
+        repoURL: "{{ $.Values.repoURL }}"
+        targetRevision: HEAD
+        helm:
+          valueFiles:
+            - "values-global.yaml"
+            - "{{ . }}/values-env.yaml"
+            - "{{ . }}/{{`{{name}}`}}/values-cluster.yaml"
       destination:
         namespace: default
         server: "{{`{{server}}`}}"
