@@ -1,0 +1,14 @@
+apiVersion: v1
+entries:
+  infra-chart:
+  - apiVersion: v2
+    appVersion: 1.16.0
+    created: "2025-04-16T07:54:38.781503815Z"
+    description: A Helm chart for creating Openshift regular objects
+    digest: 94b0af635c9938aa55d3f96f29727f252d1a00dab1efe06ec66066d7f2faf032
+    name: infra-chart
+    type: application
+    urls:
+    - https://github.com/acidonper/ocp-multicluster-gitops-infra-charts/releases/download/infra-chart-0.1.0/infra-chart-0.1.0.tgz
+    version: 0.1.0
+generated: "2025-04-16T07:54:38.781511861Z"
