@@ -1,6 +1,27 @@
 apiVersion: v1
 entries:
+  infra-acm:
+  - apiVersion: v2
+    appVersion: 1.16.0
+    created: "2025-04-16T08:04:07.377519855Z"
+    description: A Helm chart for Kubernetes
+    digest: f3ae96879cd1f677e916f8a23397980116b03940204a9b8a072488bc36004bbc
+    name: infra-acm
+    type: application
+    urls:
+    - https://github.com/acidonper/ocp-multicluster-gitops-infra-charts/releases/download/infra-acm-0.1.1/infra-acm-0.1.1.tgz
+    version: 0.1.1
   infra-chart:
+  - apiVersion: v2
+    appVersion: 1.16.0
+    created: "2025-04-16T08:04:07.502344634Z"
+    description: A Helm chart for creating Openshift regular objects
+    digest: 1ef82b9b353505ff47a2e3404a8b24792ede47a3cf3c2ccb95f32b5d4dce74c2
+    name: infra-chart
+    type: application
+    urls:
+    - https://github.com/acidonper/ocp-multicluster-gitops-infra-charts/releases/download/infra-chart-0.1.1/infra-chart-0.1.1.tgz
+    version: 0.1.1
   - apiVersion: v2
     appVersion: 1.16.0
     created: "2025-04-16T07:54:38.781503815Z"
@@ -11,4 +32,4 @@ entries:
     urls:
     - https://github.com/acidonper/ocp-multicluster-gitops-infra-charts/releases/download/infra-chart-0.1.0/infra-chart-0.1.0.tgz
     version: 0.1.0
-generated: "2025-04-16T07:54:38.781511861Z"
+generated: "2025-04-16T08:04:07.502360704Z"
