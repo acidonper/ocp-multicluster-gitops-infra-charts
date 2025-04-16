@@ -3,6 +3,16 @@ entries:
   infra-acm:
   - apiVersion: v2
     appVersion: 1.16.0
+    created: "2025-04-16T14:00:28.978224613Z"
+    description: A Helm chart for Kubernetes
+    digest: 5ff9b5fec253e1e4eb8035d7417b5b64d9f560d8a18023ce90b2fdc1c50b0276
+    name: infra-acm
+    type: application
+    urls:
+    - https://github.com/acidonper/ocp-multicluster-gitops-infra-charts/releases/download/infra-acm-0.1.3/infra-acm-0.1.3.tgz
+    version: 0.1.3
+  - apiVersion: v2
+    appVersion: 1.16.0
     created: "2025-04-16T12:47:46.787106597Z"
     description: A Helm chart for Kubernetes
     digest: 83b33a2019e0b50d98f710af1cf9f3f293afab65e82f0d9c38fe6f2244b1c61d
@@ -42,4 +52,4 @@ entries:
     urls:
     - https://github.com/acidonper/ocp-multicluster-gitops-infra-charts/releases/download/infra-chart-0.1.0/infra-chart-0.1.0.tgz
     version: 0.1.0
-generated: "2025-04-16T12:47:46.787130362Z"
+generated: "2025-04-16T14:00:28.97823897Z"
