@@ -1,0 +1,14 @@
+---
+apiVersion: apps.open-cluster-management.io/v1beta1
+kind: GitOpsCluster
+metadata:
+  name: argocd
+  namespace: "{{ $.Values.argo_namespace }}"
+spec:
+  argoServer:
+    argoNamespace: "{{ $.Values.argo_namespace }}"
+  placementRef:
+    name: argocd-placement
+    kind: Placement
+    apiVersion: cluster.open-cluster-management.io/v1beta1
+

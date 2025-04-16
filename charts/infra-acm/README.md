@@ -9,7 +9,7 @@ The idea of these objects are linking a Helm Chart installation (infra-chart), d
 
 ## Testing
 
-The file _values-test.yaml_ is key to test all the functionality implement in the chart. By default, the file _value.yaml_ is empty in order to not generate files that could not be necessary in all the Openshift Clusters for every environment.
+The file _values-test.yaml_ is key to test all the functionality implement in the chart. By default, the file _value.yaml_ is empty, or with values by default, in order to not generate files that could not be necessary in all the Openshift Clusters for every environment.
 
 Please execute the following command in the CI process to test the chart functionality:
 

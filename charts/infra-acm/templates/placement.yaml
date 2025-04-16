@@ -4,7 +4,7 @@ apiVersion: cluster.open-cluster-management.io/v1beta1
 kind: Placement
 metadata:
   name: infra-{{ . }}-placement
-  namespace: openshift-gitops
+  namespace: "{{ $.Values.argo_namespace }}"
 spec:
   predicates:
     - requiredClusterSelector:
@@ -15,3 +15,12 @@ spec:
               values:
                 - {{ . }}
 {{- end }}
+---
+apiVersion: cluster.open-cluster-management.io/v1beta1
+kind: Placement
+metadata:
+  name: argocd-placement
+  namespace: "{{ $.Values.argo_namespace }}"
+spec:
+  clusterSets:
+    - default

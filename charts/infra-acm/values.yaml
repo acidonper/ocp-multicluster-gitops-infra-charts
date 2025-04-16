@@ -1,0 +1,3 @@
+repoURL: https://acidonper.github.io/infra-chart
+argo_namespace: openshift-gitops
+environments: []

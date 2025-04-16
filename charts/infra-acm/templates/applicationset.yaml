@@ -4,7 +4,7 @@ apiVersion: argoproj.io/v1alpha1
 kind: ApplicationSet
 metadata:
   name: infra-{{ . }}
-  namespace: openshift-gitops
+  namespace: "{{ $.Values.argo_namespace }}"
 spec:
   generators:
     - clusterDecisionResource:
@@ -18,7 +18,7 @@ spec:
       name: "infra-{{ . }}-{{`{{name}}`}}"
       annotations:
         apps.open-cluster-management.io/ocm-managed-cluster: "{{`{{name}}`}}"
-        apps.open-cluster-management.io/ocm-managed-cluster-app-namespace: openshift-gitops
+        apps.open-cluster-management.io/ocm-managed-cluster-app-namespace: "{{ $.Values.argo_namespace }}"
         argocd.argoproj.io/skip-reconcile: "true"
       labels:
         velero.io/exclude-from-backup: "true"
