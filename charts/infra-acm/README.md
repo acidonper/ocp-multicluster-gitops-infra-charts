@@ -4,6 +4,7 @@ This Helm Chart includes a set of templates to setting up an Openshift cluster g
 
 * ArgoCD ApplicationSets (Pull mode Apps in ACM)
 * ACM Placements
+* GitOpsCluster & ManagedClusterSetBinding
 
 The idea of these objects are linking a Helm Chart installation (infra-chart), defined the path in the values file, to the Openshift Clusters included in every logical environment defined by ACM using the respective label (environment=xx).
 
